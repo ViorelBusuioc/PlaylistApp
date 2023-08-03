@@ -17,20 +17,6 @@ public class Album {
         return songs.add(new Song(title,duration));
     }
 
-//    private Song findSong(String title) {
-//        if (!songs.isEmpty()) {
-//            for (Song s : songs) {
-//                if (s.getTitle().equals(title)) {
-//                    // the song is on the album.
-//                    //System.out.println("findSong -> returning s");
-//                    return s;
-//                }
-//            }
-//        }
-//        //System.out.println("findsong -> returning null");
-//        return null;
-//    }
-
     public boolean addToPlayList(int trackNumber, LinkedList<Song> playList) {
         Song checkedSong = songs.findSong(trackNumber);
         if (checkedSong != null) {
